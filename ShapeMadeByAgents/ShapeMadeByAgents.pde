@@ -1,21 +1,23 @@
 float[] x;
 float[] y;
-int shapeRes = 1000;
+int shapeRes = 3;
 int centerX, centerY;
-float startRadius = 0;
+float startRadius = 300;
 float[] seeds;
 float increase = 0.8;
 float angle;
 
-float deltaLength = 2.5;//maximum delta
+//float deltaLength = 2.5;//maximum delta
+float deltaLength = 4;//maximum delta
 
 void setup() {
-  //size(800,800);
-  fullScreen();
+  size(2160,2160);
+  //fullScreen();
   background(255);
   pixelDensity(displayDensity());
   noFill();
   stroke(0, 20);
+  strokeWeight(2);
 
   centerX = width /2;
   centerY = height/2;
